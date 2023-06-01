@@ -72,7 +72,7 @@ function App() {
 
     const lastChar=exp.slice(-1)
     if(!numbers.includes(lastChar)) exp=exp.slice(0,-1);
-    const answer = Function(exp).toFixed(2)+"";
+    const answer = eval(exp).toFixed(2)+"";
     setResult(answer);
   }
 
